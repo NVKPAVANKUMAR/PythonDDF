@@ -1,0 +1,4 @@
+URL,USERNAME,PASSWORD
+https://demo.silverstripe.org/Security/login,admin,PASS123
+https://demo.silverstripe.org/Security/login,admin,password
+https://demo.silverstripe.org/Security/login,admin,admin@123
