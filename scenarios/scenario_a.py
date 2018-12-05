@@ -3,7 +3,8 @@ import unittest
 from selenium import webdriver
 from ddt import ddt, data, unpack
 from selenium.common.exceptions import NoSuchElementException
-
+from pages.homePage import HomePage
+from pages.loginPage import LoginPage
 from library.GetData import get_csv_data
 
 
@@ -21,18 +22,13 @@ class TestSceanarioA(unittest.TestCase):
     def test_login(self, target_url, usn_value, pass_value):
         driver = self.driver
         driver.get(target_url)
-        username_input_elem = driver.find_element_by_id('MemberLoginForm_LoginForm_Email')
-        username_input_elem.clear()
-        username_input_elem.send_keys(usn_value)
-        password_input_elem = driver.find_element_by_id('MemberLoginForm_LoginForm_Password')
-        password_input_elem.clear()
-        password_input_elem.send_keys(pass_value)
-        login_button_elem = driver.find_element_by_id('MemberLoginForm_LoginForm_action_doLogin')
-        login_button_elem.click()
-        time.sleep(5)
+        login_page = LoginPage(driver)
+        login_page.enter_username(usn_value)
+        login_page.enter_password(pass_value)
+        login_page.click_login_button()
+        homepage = HomePage(driver)
         try:
-            logout_button_elem = driver.find_element_by_xpath('//*[@id="cms-menu"]/div[1]/div[2]/a[2]')
-            logout_button_elem.click()
+            homepage.click_logout_button()
         except NoSuchElementException:
             print("Login Failed")
 
