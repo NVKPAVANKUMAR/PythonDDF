@@ -1,0 +1,33 @@
+test_login_1___https___demo_silverstripe_org_Security_login____admin____PASS123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_2___https___demo_silverstripe_org_Security_login____admin____password__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_3___https___demo_silverstripe_org_Security_login____admin____admin_123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 68.348s
+
+OK
+test_login_1___https___demo_silverstripe_org_Security_login____admin____PASS123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_2___https___demo_silverstripe_org_Security_login____admin____password__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_3___https___demo_silverstripe_org_Security_login____admin____admin_123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 63.223s
+
+OK
+test_login_1___https___demo_silverstripe_org_Security_login____admin____PASS123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_2___https___demo_silverstripe_org_Security_login____admin____password__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+test_login_3___https___demo_silverstripe_org_Security_login____admin____admin_123__ (scenarios.scenario_a.TestSceanarioA)
+list() -> new empty list ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 103.462s
+
+OK
